@@ -8,7 +8,7 @@ A unified in-game settings hub and developer configuration framework for all mod
 
 ## 🎮 Features for Players
 
-* **Seamless In-Game Access:** Press `Esc` anytime during gameplay to find the **"MCM Menu"** button directly beneath the game's Options menu (rendered in matching UI theme with native click sounds). Also available directly from the **Main Menu** (under "Credits").
+* **In-Game Access:** Accessible via the Pause Menu (`Esc`), the Main Menu, or the `F10` hotkey.
 * **Configurable Hotkey:** Open the MCM anytime with `F10` (can be customized or disabled in MCM settings).
 * **Responsive 2-Column Interface:**
   * **Left Column:** Mod list featuring real-time search, settings count badges `(XX)`, and smart text truncation (`...`) with full-title tooltips.

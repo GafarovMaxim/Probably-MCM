@@ -1,22 +1,13 @@
-[b]Core Specifications:[/b]
 [list]
-[*] [b]UI Entry Points:[/b] Pause Menu ([b]Esc[/b] ➔ "MCM Menu"), Main Menu (under "Credits"), and configurable global hotkey (default: [b]F10[/b]).
-[*] [b]Input Capture:[/b] Interactive key binding dialog supporting single keys and modifier combos ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Key). Clearing via [b]Delete[/b], cancel via [b]Esc[/b].
-[*] [b]Supported Control Types:[/b]
-  [list]
-  [*] Boolean toggles (checkboxes)
-  [*] Float/Int range sliders (linear interpolation with configurable min, max, and step)
-  [*] Exact integer and floating-point numeric input fields with boundary clamping
-  [*] String selection dropdowns
-  [*] Text input fields
-  [*] Action trigger buttons
-  [/list]
+[*] [b]Access Points:[/b] Pause Menu ([b]Esc[/b]), Main Menu, hotkey [b]F10[/b].
+[*] [b]KeyBinds:[/b] Interactive key binding with modifier support ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). Clear via [b]Delete[/b], cancel via [b]Esc[/b].
+[*] [b]Control Types:[/b] Toggles (bool), Sliders (float/int), Numeric fields (clamped), Dropdowns, Text fields, Action buttons.
 [*] [b]Integration Modes:[/b]
   [list]
-  [*] [b]Zero-Dependency:[/b] Automatic reflection-based parsing of standard vanilla [i]ModConfig[/i] entries.
-  [*] [b]Fluent API:[/b] Direct integration via [i]ProbablyMCM.API.ModSettings[/i] with section groupings, dynamic [i]Func<string>[/i] localization, tooltip descriptors, and live [i]onChanged[/i] callbacks.
+  [*] [b]Zero-Dependency:[/b] Automatic reflection-based parsing of vanilla [i]ModConfig[/i].
+  [*] [b]Fluent API:[/b] [i]ProbablyMCM.API.ModSettings[/i] with sections, tooltips, localized string getters, and [i]onChanged[/i] callbacks.
   [/list]
-[*] [b]Persistence:[/b] Real-time serialization to [i]%AppData%/../LocalLow/Salty Panda Studios/Probably Stolen/ModConfigs/<ModId>.json[/i]. One-click reset to defaults.
+[*] [b]Persistence:[/b] Real-time JSON serialization in [i]ModConfigs/<ModId>.json[/i]. One-click reset to defaults.
 [*] [b]Localization:[/b] Native support for 9 languages (EN, RU, ZH-Hans, ZH-Hant, DE, JA, FR, ES, PL).
 [/list]
 

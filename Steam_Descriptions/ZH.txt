@@ -1,23 +1,14 @@
-[b]技术规格与特性：[/b]
 [list]
-[*] [b]界面接入点：[/b] 暂停菜单（[b]Esc[/b] ➔「MCM-菜单」）、主菜单（制作人员正下方）、全局快捷键（默认：[b]F10[/b]，可重映射）。
-[*] [b]按键捕获机制：[/b] 原生事件级输入捕获窗口，支持单一按键及组合按键（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + Key）。[b]Delete[/b] 清除绑定，[b]Esc[/b] 取消操作。
-[*] [b]支持的控件类型：[/b]
-  [list]
-  [*] 布尔状态切换（Toggle 开关）
-  [*] 连续/离散范围滑动条（支持 min、max、step 及整数/浮点限定）
-  [*] 范围边界校验的数值精确输入框（Int / Float）
-  [*] 字符串下拉选择菜单（Dropdown）
-  [*] 单行文本输入框（InputText）
-  [*] 委托事件触发按钮（Action Button）
-  [/list]
+[*] [b]入口：[/b] 暂停菜单（[b]Esc[/b]）、主菜单、快捷键 [b]F10[/b]。
+[*] [b]按键绑定：[/b] 原生输入捕获窗口，支持单一键与组合键（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b]）。[b]Delete[/b] 清除，[b]Esc[/b] 取消。
+[*] [b]控件类型：[/b] 开关（bool）、滑动条（float/int 步长控制）、范围数值输入框、下拉菜单、文本框、动作按钮。
 [*] [b]集成模式：[/b]
   [list]
-  [*] [b]零依赖集成（Zero-Dependency）：[/b] 基于反射机制自动解析原生 [i]ModConfig[/i] 实例并映射控件。
-  [*] [b]Fluent API 高级接入：[/b] 引用 [i]ProbablyMCM.dll[/i]，支持配置分区、[i]Func<string>[/i] 动态多语言、悬停气泡提示及 [i]onChanged[/i] 实时回调。
+  [*] [b]零依赖：[/b] 自动反射解析原生 [i]ModConfig[/i]。
+  [*] [b]Fluent API：[/b] 引用 [i]ProbablyMCM.API.ModSettings[/i]，支持分区、说明气泡、多语言委托与 [i]onChanged[/i] 回调。
   [/list]
-[*] [b]数据持久化：[/b] 实时序列化至 [i]ModConfigs/<ModId>.json[/i]。支持一键重置为作者预设值。
-[*] [b]国际化支持：[/b] 深度适配游戏 9 种语言环境。
+[*] [b]数据存储：[/b] 实时序列化至 [i]ModConfigs/<ModId>.json[/i]，支持一键重置默认值。
+[*] [b]多语言：[/b] 支持 9 种游戏内置语言。
 [/list]
 
 [b]GitHub 仓库：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]

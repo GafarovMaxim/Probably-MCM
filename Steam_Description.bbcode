@@ -1,10 +1,10 @@
 [h1]Probably MCM — Mod Configuration Menu[/h1]
 
-In-game configuration interface and developer API for [i]Probably Stolen[/i].
+Tired of editing config files in Notepad or guessing key codes?
+[b]Probably MCM[/b] brings a clean, unified settings hub directly into [i]Probably Stolen[/i]. Configure all your favorite mods on the fly without restarts or hassle.
 
-[b]GitHub:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
-[b]API Documentation:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md[/url]
-[b]Issue Tracker:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/issues]GitHub Issues[/url]
+[b]GitHub Repository:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
+[b]Developer Guide:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md (EN & 中文)[/url]
 [b]Author:[/b] Raul Moreau
 
 [hr][/hr]
@@ -22,114 +22,130 @@ In-game configuration interface and developer API for [i]Probably Stolen[/i].
 [anchor=en][/anchor]
 [h2]🇬🇧 English[/h2]
 
+[b]🎮 What it does for you:[/b]
 [list]
-[*] [b]Access Points:[/b] Pause Menu ([b]Esc[/b]), Main Menu, hotkey [b]F10[/b].
-[*] [b]KeyBinds:[/b] Interactive key binding with modifier support ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). Clear via [b]Delete[/b], cancel via [b]Esc[/b].
-[*] [b]Control Types:[/b] Toggles (bool), Sliders (float/int), Numeric fields (clamped), Dropdowns, Text fields, Action buttons.
-[*] [b]Integration Modes:[/b]
-  [list]
-  [*] [b]Zero-Dependency:[/b] Automatic reflection-based parsing of vanilla [i]ModConfig[/i].
-  [*] [b]Fluent API:[/b] [i]ProbablyMCM.API.ModSettings[/i] with sections, tooltips, localized string getters, and [i]onChanged[/i] callbacks.
-  [/list]
-[*] [b]Persistence:[/b] Real-time JSON serialization in [i]ModConfigs/<ModId>.json[/i]. One-click reset to defaults.
-[*] [b]Localization:[/b] Native support for 9 languages (EN, RU, ZH-Hans, ZH-Hant, DE, JA, FR, ES, PL).
+[*] [b]All your mods in one place:[/b] Accessible right from the Pause Menu ([b]Esc[/b]), the Main Menu, or via the [b]F10[/b] hotkey.
+[*] [b]Effortless Keybinding:[/b] No more typing raw key codes. Click a hotkey setting, press your desired key or combo ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Key), and you're done. Clear it with [b]Delete[/b], cancel with [b]Esc[/b].
+[*] [b]Clean, fast interface:[/b] Instant search bar, settings counter, and neat layout that fits right into the game's style.
+[*] [b]Works right out of the box:[/b] Existing mods with standard configs appear automatically — no manual setup needed.
+[*] [b]Rich controls:[/b] Smooth sliders, toggles, exact numbers, dropdowns, and action buttons.
+[*] [b]Instant changes:[/b] Tweaks apply on the fly and save automatically, with a one-click reset to defaults if you ever need it.
+[*] [b]Full translation:[/b] Translated into all 9 in-game languages.
 [/list]
+
+[b]🛠️ For Mod Authors:[/b]
+Make your mod enjoyable to configure. Use the game's native [i]ModConfig[/i] for zero-dependency auto-detection, or use our lightweight Fluent API for custom sections, hover tooltips, and live callbacks.
+Check out the full guide in [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md[/url].
 
 [hr][/hr]
 [anchor=ru][/anchor]
 [h2]🇷🇺 Русский[/h2]
 
+[b]🎮 Что дает игрокам:[/b]
 [list]
-[*] [b]Точки входа:[/b] Меню паузы ([b]Esc[/b]), Главное меню, хоткей [b]F10[/b].
-[*] [b]Хоткеи (KeyBind):[/b] Интерактивный перехват с поддержкой модификаторов ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). Сброс — [b]Delete[/b], отмена — [b]Esc[/b].
-[*] [b]Типы контролов:[/b] Чекбоксы (bool), Слайдеры (float/int с шагом), Числовые поля с границами, Выпадающие списки, Текстовые поля, Кнопки действий.
-[*] [b]Режимы интеграции:[/b]
-  [list]
-  [*] [b]Zero-Dependency:[/b] Автоматический парсинг стандартных [i]ModConfig[/i] игры без внешних зависимостей.
-  [*] [b]Fluent API:[/b] [i]ProbablyMCM.API.ModSettings[/i] с секциями, тултипами, динамической локализацией и коллбэками [i]onChanged[/i].
-  [/list]
-[*] [b]Сохранение:[/b] Мгновенная запись в [i]ModConfigs/<ModId>.json[/i]. Сброс параметров к значениям автора.
-[*] [b]Локализация:[/b] Встроенная поддержка 9 языков игры.
+[*] [b]Все моды в одном месте:[/b] Открывается прямо во время игры по [b]Esc[/b], из Главного меню или по горячей клавише [b]F10[/b].
+[*] [b]Живая настройка клавиш:[/b] Больше не нужно угадывать названия кнопок. Нажмите на хоткей, нажмите нужную клавишу или комбинацию на клавиатуре ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + кнопка) — и всё готово. Сброс клавиши через [b]Delete[/b], отмена — [b]Esc[/b].
+[*] [b]Удобный и быстрый интерфейс:[/b] Мгновенный поиск модов, счётчик параметров и аккуратный вид в родном стиле игры.
+[*] [b]Работает сразу «из коробки»:[/b] Моды со стандартными настройками подтягиваются в меню сами — авторам даже не нужно их обновлять.
+[*] [b]Полный набор элементов:[/b] Плавные слайдеры, переключатели, точные цифры, списки выбора и кнопки действий.
+[*] [b]Мгновенное применение:[/b] Настройки сохраняются на лету, а если захотите вернуть всё как было — есть кнопка сброса к значениям автора.
+[*] [b]Родной язык:[/b] Полный перевод на все 9 языков игры.
 [/list]
+
+[b]🛠️ Для авторов модов:[/b]
+Сделайте настройку своего мода приятной для игроков. Используйте штатный [i]ModConfig[/i] для автоподключения без лишних библиотек или подключайте наш Fluent API с секциями, подсказками и моментальной реакцией на изменения.
+Примеры и документация ждут вас в [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md на GitHub[/url].
 
 [hr][/hr]
 [anchor=zh][/anchor]
 [h2]🇨🇳 简体中文[/h2]
 
+[b]🎮 玩家体验升级：[/b]
 [list]
-[*] [b]入口：[/b] 暂停菜单（[b]Esc[/b]）、主菜单、快捷键 [b]F10[/b]。
-[*] [b]按键绑定：[/b] 原生输入捕获窗口，支持单一键与组合键（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b]）。[b]Delete[/b] 清除，[b]Esc[/b] 取消。
-[*] [b]控件类型：[/b] 开关（bool）、滑动条（float/int 步长控制）、范围数值输入框、下拉菜单、文本框、动作按钮。
-[*] [b]集成模式：[/b]
-  [list]
-  [*] [b]零依赖：[/b] 自动反射解析原生 [i]ModConfig[/i]。
-  [*] [b]Fluent API：[/b] 引用 [i]ProbablyMCM.API.ModSettings[/i]，支持分区、说明气泡、多语言委托与 [i]onChanged[/i] 回调。
-  [/list]
-[*] [b]数据存储：[/b] 实时序列化至 [i]ModConfigs/<ModId>.json[/i]，支持一键重置默认值。
-[*] [b]多语言：[/b] 支持 9 种游戏内置语言。
+[*] [b]所有模组，一处搞定：[/b] 游戏中按 [b]Esc[/b] 暂停菜单、主菜单或按下 [b]F10[/b] 快捷键即可随时唤出配置中心。
+[*] [b]所见即所得的改键窗口：[/b] 再也不用在文本框里苦苦摸索按键英文名了！点击快捷键项，在弹窗中直接按下键盘按键或组合键（支持 [b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + 任意键）。按 [b]Delete[/b] 清空，按 [b]Esc[/b] 取消。
+[*] [b]丝滑好用的双栏布局：[/b] 即时输入搜索、配置数量角标、贴合游戏原生美学风格的排版。
+[*] [b]即装即用，自动兼容：[/b] 现有的绝大部分模组无需作者做任何适配，就能自动识别并呈现精美设置界面。
+[*] [b]丰富的调节方式：[/b] 滑动条、开关、精确数值框、下拉选项与动作按钮一应俱全。
+[*] [b]即时生效与重置：[/b] 改动即刻保存并生效，还贴心准备了一键恢复默认设置按钮。
+[*] [b]原生 9 语言支持：[/b] 随游戏语言无缝切换。
 [/list]
+
+[b]🛠️ 给模组作者们：[/b]
+让你的模组拥有最舒适的配置体验。既可以直接依靠游戏原生 [i]ModConfig[/i] 零依赖自动生成，也可以通过轻量 Fluent API 添加专属分区、说明气泡和实时回调。
+完整中英文教程请查阅 [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]GitHub 上的 Documentation.md[/url]。
 
 [hr][/hr]
 [anchor=de][/anchor]
 [h2]🇩🇪 Deutsch[/h2]
 
+[b]🎮 Vorteile für Spieler:[/b]
 [list]
-[*] [b]Einstieg:[/b] Pausenmenü ([b]Esc[/b]), Hauptmenü, Hotkey [b]F10[/b].
-[*] [b]Tastenbelegung:[/b] Erfassung mit Modifikatoren ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). [b]Entf[/b] zum Löschen, [b]Esc[/b] zum Abbrechen.
-[*] [b]Steuerelemente:[/b] Booleans (Toggle), Schieberegler, numerische Felder, Dropdowns, Textfelder, Aktionsbuttons.
-[*] [b]Integration:[/b] Zero-Dependency für natives [i]ModConfig[/i] oder Fluent API über [i]ProbablyMCM.API[/i].
-[*] [b]Persistenz:[/b] Echtzeit-JSON-Serialisierung in [i]ModConfigs/<ModId>.json[/i].
-[*] [b]Lokalisierung:[/b] 9 Sprachen.
+[*] [b]Alle Mods an einem Ort:[/b] Erreichbar über das Pausenmenü ([b]Esc[/b]), das Hauptmenü oder bequem per [b]F10[/b].
+[*] [b]Kinderleichte Tastenbelegung:[/b] Einfach anklicken und die gewünschte Taste oder Kombination ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Taste) drücken. [b]Entf[/b] zum Löschen, [b]Esc[/b] zum Abbrechen.
+[*] [b]Schnelle, elegante Oberfläche:[/b] Sofortige Mod-Suche, übersichtliche Zähler und natives Spieldesign.
+[*] [b]Sofort einsatzbereit:[/b] Erkennt Mods mit Standard-Konfigurationen automatisch ohne manuelle Einrichtung.
+[*] [b]Volle Kontrolle:[/b] Schieberegler, Umschalter, Zahlenfelder, Dropdowns und Aktionsbuttons.
+[*] [b]Echtzeit-Speicherung:[/b] Änderungen greifen sofort; inklusive Schaltfläche zum Zurücksetzen auf Standardwerte.
 [/list]
+[b]Entwickler-Leitfaden:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]GitHub Repository[/url]
 
 [hr][/hr]
 [anchor=ja][/anchor]
 [h2]🇯🇵 日本語[/h2]
 
+[b]🎮 プレイヤーへのメリット：[/b]
 [list]
-[*] [b]アクセス：[/b] ポーズメニュー（[b]Esc[/b]）、メインメニュー、ホットキー [b]F10[/b]。
-[*] [b]キー割り当て：[/b] 修飾キー（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b]）対応キャプチャダイアログ。[b]Delete[/b] で解除、[b]Esc[/b] でキャンセル。
-[*] [b]コントロール：[/b] トグル、スライダー、数値入力、ドロップダウン、テキスト入力、アクションボタン。
-[*] [b]統合モード：[/b] バニラ [i]ModConfig[/i] 自動検出（依存なし）または [i]ProbablyMCM.API[/i]（Fluent API）。
-[*] [b]データ保存：[/b] [i]ModConfigs/<ModId>.json[/i] へのリアルタイム保存。
-[*] [b]言語：[/b] 9言語対応。
+[*] [b]すべてのMODを一括管理：[/b] ポーズメニュー（[b]Esc[/b]）、メインメニュー、または [b]F10[/b] キーからいつでも設定画面を開けます。
+[*] [b]直感的なキー割り当て：[/b] キー名を文字入力する必要はありません。設定をクリックして、キーまたは組み合わせ（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + キー）を押すだけ。[b]Delete[/b] で解除、[b]Esc[/b] でキャンセル。
+[*] [b]快適でスピーディなUI：[/b] リアルタイム検索、設定項目数バッジ、ゲームの世界観に馴染むデザイン。
+[*] [b]導入するだけで即対応：[/b] 標準設定を使用する既存MODを自動認識し、手動設定不要で美しく一覧化。
+[*] [b]多彩な操作コンポーネント：[/b] スライダー、トグル、数値入力、ドロップダウン、実行ボタンに対応。
+[*] [b]リアルタイム保存とリセット：[/b] 変更は即座に反映。いつでも初期設定へワンクリックで復元可能。
 [/list]
+[b]開発者向けガイド:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]GitHub Repository[/url]
 
 [hr][/hr]
 [anchor=fr][/anchor]
 [h2]🇫🇷 Français[/h2]
 
+[b]🎮 Pour les joueurs :[/b]
 [list]
-[*] [b]Accès :[/b] Menu Pause ([b]Échap[/b]), menu principal, raccourci [b]F10[/b].
-[*] [b]Raccourcis :[/b] Capture interactive avec touches modificatrices ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). [b]Suppr[/b] pour effacer, [b]Échap[/b] pour annuler.
-[*] [b]Contrôles :[/b] Interrupteurs, curseurs, champs numériques, listes déroulantes, champs texte, boutons d'action.
-[*] [b]Intégration :[/b] Détection automatique [i]ModConfig[/i] sans dépendance ou Fluent API via [i]ProbablyMCM.API[/i].
-[*] [b]Persistance :[/b] Sérialisation JSON en temps réel dans [i]ModConfigs/<ModId>.json[/i].
-[*] [b]Langues :[/b] 9 langues prises en charge.
+[*] [b]Tous vos mods au même endroit :[/b] Accessible depuis le menu Pause ([b]Échap[/b]), le menu principal ou via le raccourci [b]F10[/b].
+[*] [b]Configuration intuitive des touches :[/b] Plus besoin de deviner les codes de touches ! Cliquez, appuyez sur la touche ou la combinaison ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + touche) et c'est validé. Touche [b]Suppr[/b] pour effacer, [b]Échap[/b] pour annuler.
+[*] [b]Interface réactive et soignée :[/b] Recherche instantanée, compteur de réglages et style fidèle au jeu.
+[*] [b]Prêt à l'emploi :[/b] Les mods existants avec configurations standards sont reconnus automatiquement sans mise à jour nécessaire.
+[*] [b]Contrôles variés :[/b] Curseurs précis, interrupteurs, saisie numérique, menus déroulants et boutons d'action.
+[*] [b]Prise en compte immédiate :[/b] Sauvegarde automatique en direct avec bouton de réinitialisation rapide.
 [/list]
+[b]Guide développeur :[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]GitHub Repository[/url]
 
 [hr][/hr]
 [anchor=es][/anchor]
 [h2]🇪🇸 Español[/h2]
 
+[b]🎮 Ventajas para jugadores:[/b]
 [list]
-[*] [b]Acceso:[/b] Menú de pausa ([b]Esc[/b]), menú principal, tecla [b]F10[/b].
-[*] [b]Teclas:[/b] Asignación con modificadores ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). [b]Supr[/b] para borrar, [b]Esc[/b] para cancelar.
-[*] [b]Controles:[/b] Interruptores, barras deslizantes, campos numéricos, menús desplegables, entradas de texto, botones de acción.
-[*] [b]Integración:[/b] Detección de [i]ModConfig[/i] nativo (sin dependencias) o Fluent API mediante [i]ProbablyMCM.API[/i].
-[*] [b]Persistencia:[/b] Guardado JSON en tiempo real en [i]ModConfigs/<ModId>.json[/i].
-[*] [b]Idiomas:[/b] 9 idiomas compatibles.
+[*] [b]Todos tus mods en un solo lugar:[/b] Accede desde el menú de pausa ([b]Esc[/b]), el menú principal o la tecla rápida [b]F10[/b].
+[*] [b]Asignación sencilla de teclas:[/b] Olvídate de escribir códigos de teclas. Haz clic en la opción y pulsa la tecla o combinación deseada ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + tecla). Pulsa [b]Supr[/b] para borrar o [b]Esc[/b] para cancelar.
+[*] [b]Interfaz rápida y estilizada:[/b] Búsqueda instantánea, contador de opciones y diseño integrado con el juego.
+[*] [b]Listo para usar:[/b] Detecta automáticamente los mods existentes con opciones estándar sin necesidad de parches.
+[*] [b]Controles completos:[/b] Deslizadores suaves, casillas de verificación, campos numéricos y botones de acción.
+[*] [b]Cambios al instante:[/b] Guardado automático en tiempo real con botón de reinicio a valores originales.
 [/list]
+[b]Documentación para creadores:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]GitHub Repository[/url]
 
 [hr][/hr]
 [anchor=pl][/anchor]
 [h2]🇵🇱 Polski[/h2]
 
+[b]🎮 Co zyskujesz jako gracz:[/b]
 [list]
-[*] [b]Dostęp:[/b] Menu pauzy ([b]Esc[/b]), menu główne, skrót [b]F10[/b].
-[*] [b]Klawisze:[/b] Interaktywny wybór z modyfikatorami ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). [b]Delete[/b] — czyść, [b]Esc[/b] — anuluj.
-[*] [b]Kontrolki:[/b] Przełączniki, suwaki, pola numeryczne, listy rozwijane, pola tekstowe, przyciski akcji.
-[*] [b]Integracja:[/b] Automatyczny odczyt [i]ModConfig[/i] (brak zależności) lub Fluent API przez [i]ProbablyMCM.API[/i].
-[*] [b]Zapis:[/b] Serializacja JSON w czasie rzeczywistym do [i]ModConfigs/<ModId>.json[/i].
-[*] [b]Języki:[/b] 9 języków.
+[*] [b]Wszystkie mody pod ręką:[/b] Dostęp bezpośrednio z menu pauzy ([b]Esc[/b]), menu głównego lub klawiszem [b]F10[/b].
+[*] [b]Wygodne przypisywanie klawiszy:[/b] Koniec z ręcznym wpisywaniem nazw klawiszy. Kliknij ustawienie i naciśnij wybrany klawisz lub kombinację ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + klawisz). Klawisz [b]Delete[/b] czyści przypisanie, a [b]Esc[/b] anuluje.
+[*] [b]Przejrzysty i szybki interfejs:[/b] Błyskawiczna wyszukiwarka, liczniki opcji i styl dopasowany do gry.
+[*] [b]Działa od razu po instalacji:[/b] Automatycznie rozpoznaje istniejące mody ze standardową konfiguracją.
+[*] [b]Bogaty wybór kontrolek:[/b] Płynne suwaki, przełączniki, pola liczbowe, listy rozwijane i przyciski akcji.
+[*] [b]Zapis na żywo:[/b] Zmiany działają natychmiast i zapisują się w tle, z możliwością przywrócenia domyślnych ustawień autora.
 [/list]
+[b]Dokumentacja programistyczna:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]GitHub Repository[/url]

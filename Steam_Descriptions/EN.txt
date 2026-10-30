@@ -1,15 +1,16 @@
+[b]🎮 What it does for you:[/b]
 [list]
-[*] [b]Access Points:[/b] Pause Menu ([b]Esc[/b]), Main Menu, hotkey [b]F10[/b].
-[*] [b]KeyBinds:[/b] Interactive key binding with modifier support ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b]). Clear via [b]Delete[/b], cancel via [b]Esc[/b].
-[*] [b]Control Types:[/b] Toggles (bool), Sliders (float/int), Numeric fields (clamped), Dropdowns, Text fields, Action buttons.
-[*] [b]Integration Modes:[/b]
-  [list]
-  [*] [b]Zero-Dependency:[/b] Automatic reflection-based parsing of vanilla [i]ModConfig[/i].
-  [*] [b]Fluent API:[/b] [i]ProbablyMCM.API.ModSettings[/i] with sections, tooltips, localized string getters, and [i]onChanged[/i] callbacks.
-  [/list]
-[*] [b]Persistence:[/b] Real-time JSON serialization in [i]ModConfigs/<ModId>.json[/i]. One-click reset to defaults.
-[*] [b]Localization:[/b] Native support for 9 languages (EN, RU, ZH-Hans, ZH-Hant, DE, JA, FR, ES, PL).
+[*] [b]All your mods in one place:[/b] Accessible right from the Pause Menu ([b]Esc[/b]), the Main Menu, or via the [b]F10[/b] hotkey.
+[*] [b]Effortless Keybinding:[/b] No more typing raw key codes. Click a hotkey setting, press your desired key or combo ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Key), and you're done. Clear it with [b]Delete[/b], cancel with [b]Esc[/b].
+[*] [b]Clean, fast interface:[/b] Instant search bar, settings counter, and neat layout that fits right into the game's style.
+[*] [b]Works right out of the box:[/b] Existing mods with standard configs appear automatically — no manual setup needed.
+[*] [b]Rich controls:[/b] Smooth sliders, toggles, exact numbers, dropdowns, and action buttons.
+[*] [b]Instant changes:[/b] Tweaks apply on the fly and save automatically, with a one-click reset to defaults if you ever need it.
+[*] [b]Full translation:[/b] Translated into all 9 in-game languages.
 [/list]
 
+[b]🛠️ For Mod Authors:[/b]
+Make your mod enjoyable to configure. Use the game's native [i]ModConfig[/i] for zero-dependency auto-detection, or use our lightweight Fluent API for custom sections, hover tooltips, and live callbacks.
+
 [b]GitHub:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
-[b]API Documentation:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md[/url]
+[b]Developer Guide:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md[/url]

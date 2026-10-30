@@ -1,0 +1,15 @@
+[b]🎮 プレイヤー向け機能：[/b]
+[list]
+[*] [b]すべてのMODを一括管理：[/b] ポーズメニュー（[b]Esc[/b]）、メインメニュー、または [b]F10[/b] キーで即座に開けます。
+[*] [b]直感的なキー設定：[/b] 修飾キー（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + キー）対応のキーバインド。[b]Delete[/b] で解除。
+[*] [b]スピーディで快適なUI：[/b] インスタント検索、設定項目数カウント、ゲームの世界観に馴染むデザイン。
+[*] [b]導入するだけで即対応：[/b] 標準設定を使用する既存MODを自動的に読み込みます。
+[*] [b]即座に反映・リセット：[/b] 設定はリアルタイムで保存。初期値への一発復元ボタンも完備。
+[*] [b]多言語対応：[/b] ゲーム内の全9言語に完全対応。
+[/list]
+
+[b]🛠️ MOD製作者向け：[/b]
+自作MODに快適な設定画面を。依存関係不要の標準 [i]ModConfig[/i] 自動認識、またはセクション分け・ツールチップ・コールバックに対応した Fluent API をご利用いただけます。
+
+[b]GitHub：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
+[b]ドキュメント：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md (GitHub)[/url]

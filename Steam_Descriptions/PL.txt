@@ -1,0 +1,15 @@
+[b]🎮 Dla graczy:[/b]
+[list]
+[*] [b]Wszystkie mody w jednym miejscu:[/b] Dostęp bezpośrednio z menu pauzy ([b]Esc[/b]), menu głównego lub klawiszem [b]F10[/b].
+[*] [b]Wygodne przypisywanie klawiszy:[/b] Skróty z obsługą modyfikatorów ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + klawisz). Klawisz [b]Delete[/b] czyści przypisanie.
+[*] [b]Szybki i przejrzysty interfejs:[/b] Wyszukiwarka na żywo, licznik parametrów i estetyczny styl gry.
+[*] [b]Działa od razu po instalacji:[/b] Modyfikacje ze standardową konfiguracją pojawiają się w menu automatycznie.
+[*] [b]Błyskawiczne zastosowanie:[/b] Ustawienia zapisują się w locie, z przyciskiem przywracania wartości domyślnych autora.
+[*] [b]Twój język:[/b] Pełne tłumaczenie na wszystkie 9 języków gry.
+[/list]
+
+[b]🛠️ Dla twórców modów:[/b]
+Zapewnij graczom wygodną konfigurację swojego moda. Korzystaj z natywnego [i]ModConfig[/i] bez zbędnych zależności lub naszej Fluent API z sekcjami, podpowiedziami i reakcją na żywo.
+
+[b]GitHub:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
+[b]Dokumentacja:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md na GitHubie[/url]

@@ -1,16 +1,15 @@
-[b]🎮 玩家体验升级：[/b]
+[b]🎮 玩家功能：[/b]
 [list]
-[*] [b]所有模组，一处搞定：[/b] 游戏中按 [b]Esc[/b] 暂停菜单、主菜单或按下 [b]F10[/b] 快捷键即可随时唤出配置中心。
-[*] [b]所见即所得的改键窗口：[/b] 再也不用在文本框里苦苦摸索按键英文名了！点击快捷键项，在弹窗中直接按下键盘按键或组合键（支持 [b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + 任意键）。按 [b]Delete[/b] 清空，按 [b]Esc[/b] 取消。
-[*] [b]丝滑好用的双栏布局：[/b] 即时输入搜索、配置数量角标、贴合游戏原生美学风格的排版。
-[*] [b]即装即用，自动兼容：[/b] 现有的绝大部分模组无需作者做任何适配，就能自动识别并呈现精美设置界面。
-[*] [b]丰富的调节方式：[/b] 滑动条、开关、精确数值框、下拉选项与动作按钮一应俱全。
-[*] [b]即时生效与重置：[/b] 改动即刻保存并生效，还贴心准备了一键恢复默认设置按钮。
-[*] [b]原生 9 语言支持：[/b] 随游戏语言无缝切换。
+[*] [b]所有模组集中管理：[/b] 游戏中按 [b]Esc[/b] 暂停菜单、主菜单或通过 [b]F10[/b] 快捷键随时打开。
+[*] [b]即时按键绑定：[/b] 支持修饰组合键（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + 按键），按 [b]Delete[/b] 键清除绑定。
+[*] [b]高效流畅的界面：[/b] 即时模组搜索、参数计数，契合游戏原生美学风格。
+[*] [b]开箱即用：[/b] 带有标准配置的现有模组会自动加载到菜单中。
+[*] [b]即时生效与重置：[/b] 修改实时保存生效，支持一键恢复作者默认配置。
+[*] [b]原生支持多语言：[/b] 完整翻译并支持游戏内置的 9 种语言。
 [/list]
 
-[b]🛠️ 给模组作者们：[/b]
-让你的模组拥有最舒适的配置体验。既可以直接依靠游戏原生 [i]ModConfig[/i] 零依赖自动生成，也可以通过轻量 Fluent API 添加专属分区、说明气泡和实时回调。
+[b]🛠️ 模组开发者：[/b]
+为你的模组提供舒适的配置体验。既可直接使用游戏原生 [i]ModConfig[/i] 自动接入，也可引用 Fluent API 支持配置分区、悬停说明图标与实时回调。
 
-[b]GitHub 仓库：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
-[b]开发者教程：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md[/url]
+[b]GitHub：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
+[b]文档：[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md (GitHub)[/url]

@@ -1,0 +1,167 @@
+[h1]Probably MCM — Mod Configuration Menu[/h1]
+
+Universal in-game configuration interface and developer API for [i]Probably Stolen[/i].
+
+[b]GitHub:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM]https://github.com/GafarovMaxim/Probably-MCM[/url]
+[b]API Documentation:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/blob/main/Documentation.md]Documentation.md[/url]
+[b]Issue Tracker:[/b] [url=https://github.com/GafarovMaxim/Probably-MCM/issues]GitHub Issues[/url]
+[b]Author:[/b] Raul Moreau
+
+[hr][/hr]
+[h2]🌐 Languages[/h2]
+• [url=#en]English[/url]
+• [url=#ru]Русский[/url]
+• [url=#zh]简体中文[/url]
+• [url=#de]Deutsch[/url]
+• [url=#ja]日本語[/url]
+• [url=#fr]Français[/url]
+• [url=#es]Español[/url]
+• [url=#pl]Polski[/url]
+
+[hr][/hr]
+[anchor=en][/anchor]
+[h2]🇬🇧 English[/h2]
+
+[b]Core Specifications:[/b]
+[list]
+[*] [b]UI Entry Points:[/b] Pause Menu ([b]Esc[/b] ➔ "MCM Menu"), Main Menu (under "Credits"), and configurable global hotkey (default: [b]F10[/b]).
+[*] [b]Input Capture:[/b] Interactive key binding dialog supporting single keys and modifier combos ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Key). Clearing via [b]Delete[/b], cancel via [b]Esc[/b].
+[*] [b]Supported Control Types:[/b]
+  [list]
+  [*] Boolean toggles (checkboxes)
+  [*] Float/Int range sliders (linear interpolation with configurable min, max, and step)
+  [*] Exact integer and floating-point numeric input fields with boundary clamping
+  [*] String selection dropdowns
+  [*] Text input fields
+  [*] Action trigger buttons
+  [/list]
+[*] [b]Integration Modes:[/b]
+  [list]
+  [*] [b]Zero-Dependency:[/b] Automatic reflection-based parsing of standard vanilla [i]ModConfig[/i] entries.
+  [*] [b]Fluent API:[/b] Direct integration via [i]ProbablyMCM.API.ModSettings[/i] with section groupings, dynamic [i]Func<string>[/i] localization, tooltip descriptors, and live [i]onChanged[/i] callbacks.
+  [/list]
+[*] [b]Persistence:[/b] Real-time serialization to [i]%AppData%/../LocalLow/Salty Panda Studios/Probably Stolen/ModConfigs/<ModId>.json[/i]. One-click reset to defaults.
+[*] [b]Localization:[/b] Native support for 9 languages (EN, RU, ZH-Hans, ZH-Hant, DE, JA, FR, ES, PL).
+[/list]
+
+[hr][/hr]
+[anchor=ru][/anchor]
+[h2]🇷🇺 Русский[/h2]
+
+[b]Технические характеристики:[/b]
+[list]
+[*] [b]Точки входа в интерфейс:[/b] Меню паузы ([b]Esc[/b] ➔ «MCM-меню»), Главное меню (под кнопкой «Авторы»), глобальный хоткей (по умолчанию [b]F10[/b]).
+[*] [b]Захват ввода (KeyBind):[/b] Диалоговое окно перехвата клавиш с поддержкой одиночных клавиш и модификаторов ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + клавиша). Очистка значения клавишей [b]Delete[/b], отмена через [b]Esc[/b].
+[*] [b]Поддерживаемые контролы:[/b]
+  [list]
+  [*] Логические переключатели (bool)
+  [*] Ползунки диапазонов (min, max, step, float/int)
+  [*] Поля точного ввода целых и вещественных чисел с валидацией границ
+  [*] Выпадающие списки (string[])
+  [*] Текстовые поля ввода
+  [*] Кнопки вызова действий (Action)
+  [/list]
+[*] [b]Режимы интеграции:[/b]
+  [list]
+  [*] [b]Zero-Dependency:[/b] Автоматическое распознавание стандартных ванильных [i]ModConfig[/i] записей без добавления внешних зависимостей.
+  [*] [b]Fluent API:[/b] Прямое API через [i]ProbablyMCM.API.ModSettings[/i] с поддержкой секций, тултипов, динамической локализации [i]Func<string>[/i] и коллбэков [i]onChanged[/i].
+  [/list]
+[*] [b]Сохранение данных:[/b] Мгновенная сериализация в [i]ModConfigs/<ModId>.json[/i]. Поддержка полного сброса параметров к значениям автора.
+[*] [b]Локализация:[/b] Встроенная поддержка 9 языков игры (RU, EN, ZH, DE, JA, FR, ES, PL).
+[/list]
+
+[hr][/hr]
+[anchor=zh][/anchor]
+[h2]🇨🇳 简体中文[/h2]
+
+[b]技术规格与特性：[/b]
+[list]
+[*] [b]界面接入点：[/b] 暂停菜单（[b]Esc[/b] ➔「MCM-菜单」）、主菜单（制作人员正下方）、全局快捷键（默认：[b]F10[/b]，可重映射）。
+[*] [b]按键捕获机制：[/b] 原生事件级输入捕获窗口，支持单一按键及组合按键（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + Key）。[b]Delete[/b] 清除绑定，[b]Esc[/b] 取消操作。
+[*] [b]支持的控件类型：[/b]
+  [list]
+  [*] 布尔状态切换（Toggle 开关）
+  [*] 连续/离散范围滑动条（支持 min、max、step 及整数/浮点限定）
+  [*] 范围边界校验的数值精确输入框（Int / Float）
+  [*] 字符串下拉选择菜单（Dropdown）
+  [*] 单行文本输入框（InputText）
+  [*] 委托事件触发按钮（Action Button）
+  [/list]
+[*] [b]集成模式：[/b]
+  [list]
+  [*] [b]零依赖集成（Zero-Dependency）：[/b] 基于反射机制自动解析原生 [i]ModConfig[/i] 实例并映射控件。
+  [*] [b]Fluent API 高级接入：[/b] 引用 [i]ProbablyMCM.dll[/i]，支持配置分区、[i]Func<string>[/i] 动态多语言、悬停气泡提示及 [i]onChanged[/i] 实时回调。
+  [/list]
+[*] [b]数据持久化：[/b] 实时序列化至 [i]ModConfigs/<ModId>.json[/i]。支持一键重置为作者预设值。
+[*] [b]国际化支持：[/b] 深度适配游戏 9 种语言环境。
+[/list]
+
+[hr][/hr]
+[anchor=de][/anchor]
+[h2]🇩🇪 Deutsch[/h2]
+
+[b]Technische Spezifikationen:[/b]
+[list]
+[*] [b]Einstiegspunkte:[/b] Pausenmenü ([b]Esc[/b] ➔ „MCM-Menü“), Hauptmenü (unter „Credits“) und konfigurierbarer Hotkey (Standard: [b]F10[/b]).
+[*] [b]Tastenerfassung:[/b] Interaktiver Dialog für Einzeltasten und Modifikatorkombinationen ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Taste). Löschen via [b]Entf[/b], Abbruch via [b]Esc[/b].
+[*] [b]Steuerelemente:[/b] Booleans (Toggle), Schieberegler (Slider), numerische Eingabefelder (Int/Float), Dropdown-Menüs, Textfelder, Aktionsschaltflächen.
+[*] [b]Integration:[/b] Automatische Erkennung nativer [i]ModConfig[/i]-Einträge (Zero-Dependency) oder Fluent API über [i]ProbablyMCM.API.ModSettings[/i].
+[*] [b]Persistenz:[/b] Echtzeit-JSON-Serialisierung in [i]ModConfigs/<ModId>.json[/i].
+[*] [b]Lokalisierung:[/b] 9 Sprachen integriert.
+[/list]
+
+[hr][/hr]
+[anchor=ja][/anchor]
+[h2]🇯🇵 日本語[/h2]
+
+[b]技術仕様：[/b]
+[list]
+[*] [b]UIアクセスポイント：[/b] ポーズメニュー（[b]Esc[/b] ➔「MCMメニュー」）、メインメニュー（クレジット下部）、グローバルホットキー（初期値: [b]F10[/b]）。
+[*] [b]キー入力キャプチャ：[/b] 修飾キー（[b]Ctrl[/b]、[b]Alt[/b]、[b]Shift[/b] + キー）および単一キーに対応した設定ダイアログ。[b]Delete[/b] でクリア、[b]Esc[/b] でキャンセル。
+[*] [b]対応コントロール：[/b] トグル（bool）、範囲スライダー（min/max/step）、数値入力（int/float）、ドロップダウン、テキストフィールド、アクションボタン。
+[*] [b]実装方式：[/b] バニラ [i]ModConfig[/i] 自動検出（依存関係不要）および [i]ProbablyMCM.API[/i]（Fluent API）に対応。
+[*] [b]データ保存：[/b] [i]ModConfigs/<ModId>.json[/i] へのリアルタイムJSON書き込み。
+[*] [b]多言語対応：[/b] ゲーム内9言語をサポート。
+[/list]
+
+[hr][/hr]
+[anchor=fr][/anchor]
+[h2]🇫🇷 Français[/h2]
+
+[b]Spécifications techniques :[/b]
+[list]
+[*] [b]Points d'accès :[/b] Menu Pause ([b]Échap[/b] ➔ « Menu MCM »), menu principal, et raccourci global paramétrable (défaut : [b]F10[/b]).
+[*] [b]Capture des touches :[/b] Fenêtre interactive prenant en charge les touches uniques et combinaisons ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + touche). Effacement via [b]Suppr[/b], annulation via [b]Échap[/b].
+[*] [b]Contrôles pris en charge :[/b] Interrupteurs booléens, curseurs de plage (min/max/pas), saisie numérique (int/float), listes déroulantes, champs texte, boutons d'action.
+[*] [b]Modes d'intégration :[/b] Détection automatique [i]ModConfig[/i] sans dépendance ou Fluent API complète via [i]ProbablyMCM.API[/i].
+[*] [b]Persistance :[/b] Sérialisation JSON en temps réel dans [i]ModConfigs/<ModId>.json[/i].
+[*] [b]Langues :[/b] Support de 9 langues.
+[/list]
+
+[hr][/hr]
+[anchor=es][/anchor]
+[h2]🇪🇸 Español[/h2]
+
+[b]Especificaciones técnicas:[/b]
+[list]
+[*] [b]Puntos de entrada UI:[/b] Menú de pausa ([b]Esc[/b] ➔ «Menú MCM»), menú principal y acceso rápido configurable (por defecto: [b]F10[/b]).
+[*] [b]Captura de teclas:[/b] Diálogo interactivo con soporte para teclas individuales y combinaciones ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + tecla). Borrado con [b]Supr[/b], cancelación con [b]Esc[/b].
+[*] [b]Controles admitidos:[/b] Interruptores (bool), controles deslizantes (min/max/paso), entradas numéricas (int/float), menús desplegables, entradas de texto, botones de acción.
+[*] [b]Integración:[/b] Detección automática de [i]ModConfig[/i] nativo (sin dependencias) o Fluent API mediante [i]ProbablyMCM.API[/i].
+[*] [b]Persistencia:[/b] Serialización JSON instantánea en [i]ModConfigs/<ModId>.json[/i].
+[*] [b]Localización:[/b] 9 idiomas compatibles.
+[/list]
+
+[hr][/hr]
+[anchor=pl][/anchor]
+[h2]🇵🇱 Polski[/h2]
+
+[b]Specyfikacja techniczna:[/b]
+[list]
+[*] [b]Dostęp do UI:[/b] Menu pauzy ([b]Esc[/b] ➔ „MCM Menu”), menu główne oraz konfigurowalny skrót klawiszowy (domyślnie: [b]F10[/b]).
+[*] [b]Rejestracja klawiszy:[/b] Okno dialogowe z obsługą pojedynczych klawiszy oraz kombinacji ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + klawisz). Czyszczenie klawiszem [b]Delete[/b], anulowanie [b]Esc[/b].
+[*] [b]Obsługiwane kontrolki:[/b] Przełączniki (bool), suwaki zakresu (min/max/krok), pola numeryczne (int/float), listy rozwijane, pola tekstowe, przyciski akcji.
+[*] [b]Tryby integracji:[/b] Automatyczny odczyt natywnego [i]ModConfig[/i] (brak zależności) lub Fluent API za pośrednictwem [i]ProbablyMCM.API[/i].
+[*] [b]Zapis danych:[/b] Serializacja JSON w czasie rzeczywistym do [i]ModConfigs/<ModId>.json[/i].
+[*] [b]Lokalizacja:[/b] Obsługa 9 języków gry.
+[/list]

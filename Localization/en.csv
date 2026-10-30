@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (English)
+mcm_esc_button,MCM Menu
+mcm_window_title,Mod Configuration Menu
+mcm_search_placeholder,🔍 Search mod or setting...
+mcm_mod_count,Total mods: {0}
+mcm_author,Author: {0}
+mcm_select_mod_hint,Select a mod from the list on the left to configure settings.
+mcm_no_settings,This mod has no configurable settings.
+mcm_default_section,General
+mcm_btn_reset,↺ Reset to Defaults
+mcm_btn_done,Done
+mcm_key_not_bound,Not bound
+mcm_press_any_key,Press any key...
+mcm_section_ui,Interface
+mcm_opt_show_descriptions,Show mod descriptions
+mcm_opt_show_descriptions_tip,Display mod description in the header of settings panel
+mcm_opt_auto_save_notice,Notify on auto-save
+mcm_opt_auto_save_notice_tip,Show popup notification when settings are saved
+mcm_section_hotkeys,Quick Access
+mcm_opt_quick_open_key,Quick open hotkey
+mcm_opt_quick_open_key_tip,Optional hotkey to open MCM directly without Esc menu. Press Backspace to disable.
+mcm_bind_dialog_title,Keybind Setup
+mcm_bind_hint,Press a key or combination (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Press Delete to clear. Press Esc to cancel.
+mcm_bind_btn_clear,Clear
+mcm_bind_btn_save,Save
+mcm_bind_btn_cancel,Cancel

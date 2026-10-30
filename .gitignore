@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE
+.vs/
+.idea/
+.vscode/
+
+# SteamCMD temporary cache & binaries
+.steamcmd/
+*.zip
+
+# Distribution folder (generated from root files)
+Dist/

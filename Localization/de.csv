@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (German)
+mcm_esc_button,MCM-Menü
+mcm_window_title,Mod-Konfigurationsmenü
+mcm_search_placeholder,🔍 Mod oder Einstellung suchen...
+mcm_mod_count,Mods insgesamt: {0}
+mcm_author,Autor: {0}
+mcm_select_mod_hint,Wählen Sie einen Mod aus der Liste links, um Einstellungen zu konfigurieren.
+mcm_no_settings,Dieser Mod enthält keine konfigurierbaren Einstellungen.
+mcm_default_section,Allgemein
+mcm_btn_reset,↺ Standard wiederherstellen
+mcm_btn_done,Fertig
+mcm_key_not_bound,Nicht belegt
+mcm_press_any_key,Beliebige Taste drücken...
+mcm_section_ui,Benutzeroberfläche
+mcm_opt_show_descriptions,Mod-Beschreibungen anzeigen
+mcm_opt_show_descriptions_tip,Ausführliche Beschreibung des Mods im Kopfbereich des Einstellungsfensters anzeigen
+mcm_opt_auto_save_notice,Automatische Speicherbenachrichtigung
+mcm_opt_auto_save_notice_tip,Kurze Benachrichtigung beim Speichern der Einstellungen anzeigen
+mcm_section_hotkeys,Schnellzugriff
+mcm_opt_quick_open_key,Zusätzliche Taste zum Öffnen
+mcm_opt_quick_open_key_tip,Optionale Tastenkombination zum direkten Öffnen des Mod-Menüs ohne Esc. Backspace drücken zum Deaktivieren.
+mcm_bind_dialog_title,Tastenbelegung
+mcm_bind_hint,Drücken Sie eine Taste oder Kombination (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Drücken Sie Delete zum Löschen. Esc zum Abbrechen.
+mcm_bind_btn_clear,Löschen
+mcm_bind_btn_save,Speichern
+mcm_bind_btn_cancel,Abbrechen

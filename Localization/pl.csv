@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (Polish)
+mcm_esc_button,Menu MCM
+mcm_window_title,Menu konfiguracji modów
+mcm_search_placeholder,🔍 Szukaj moda lub ustawienia...
+mcm_mod_count,Łącznie modów: {0}
+mcm_author,Autor: {0}
+mcm_select_mod_hint,Wybierz mod z listy po lewej stronie, aby skonfigurować ustawienia.
+mcm_no_settings,Ten mod nie zawiera konfigurowalnych ustawień.
+mcm_default_section,Ogólne
+mcm_btn_reset,↺ Przywróć domyślne
+mcm_btn_done,Gotowe
+mcm_key_not_bound,Nieprzypisany
+mcm_press_any_key,Naciśnij dowolny klawisz...
+mcm_section_ui,Interfejs
+mcm_opt_show_descriptions,Pokaż opisy modów
+mcm_opt_show_descriptions_tip,Wyświetl szczegółowy opis moda w nagłówku panelu ustawień
+mcm_opt_auto_save_notice,Powiadomienie o autozapisie
+mcm_opt_auto_save_notice_tip,Pokaż powiadomienie po zapisaniu ustawień
+mcm_section_hotkeys,Szybki dostęp
+mcm_opt_quick_open_key,Dodatkowy klawisz otwierania
+mcm_opt_quick_open_key_tip,Opcjonalny klawisz skrótu do otwierania menu modów bez menu Esc. Naciśnij Backspace, aby wyłączyć.
+mcm_bind_dialog_title,Ustawienie klawisza
+mcm_bind_hint,Naciśnij klawisz lub kombinację (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Naciśnij Delete, aby wyczyścić. Esc, aby anulować.
+mcm_bind_btn_clear,Wyczyść
+mcm_bind_btn_save,Zapisz
+mcm_bind_btn_cancel,Anuluj

@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (Spanish)
+mcm_esc_button,Menú MCM
+mcm_window_title,Menú de configuración de mods
+mcm_search_placeholder,🔍 Buscar mod o ajuste...
+mcm_mod_count,Total de mods: {0}
+mcm_author,Autor: {0}
+mcm_select_mod_hint,Selecciona un mod de la lista de la izquierda para configurar los ajustes.
+mcm_no_settings,Este mod no contiene ajustes configurables.
+mcm_default_section,General
+mcm_btn_reset,↺ Restablecer valores
+mcm_btn_done,Hecho
+mcm_key_not_bound,Sin asignar
+mcm_press_any_key,Pulsa cualquier tecla...
+mcm_section_ui,Interfaz
+mcm_opt_show_descriptions,Mostrar descripciones de mods
+mcm_opt_show_descriptions_tip,Muestra una descripción detallada del mod en la cabecera del panel
+mcm_opt_auto_save_notice,Aviso de guardado automático
+mcm_opt_auto_save_notice_tip,Muestra una notificación emergente al guardar los ajustes
+mcm_section_hotkeys,Acceso rápido
+mcm_opt_quick_open_key,Tecla de acceso rápido
+mcm_opt_quick_open_key_tip,Tecla opcional para abrir los ajustes de mods directamente sin el menú Esc. Pulsa Retroceso para desactivar.
+mcm_bind_dialog_title,Configuración de tecla
+mcm_bind_hint,Pulsa una tecla o combinación (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Pulsa Delete para borrar. Esc para cancelar.
+mcm_bind_btn_clear,Borrar
+mcm_bind_btn_save,Guardar
+mcm_bind_btn_cancel,Cancelar

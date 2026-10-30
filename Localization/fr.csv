@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (French)
+mcm_esc_button,Menu MCM
+mcm_window_title,Menu de configuration des mods
+mcm_search_placeholder,🔍 Rechercher un mod ou un paramètre...
+mcm_mod_count,Total des mods : {0}
+mcm_author,Auteur : {0}
+mcm_select_mod_hint,Sélectionnez un mod dans la liste de gauche pour configurer les paramètres.
+mcm_no_settings,Ce mod ne contient aucun paramètre configurable.
+mcm_default_section,Général
+mcm_btn_reset,↺ Réinitialiser par défaut
+mcm_btn_done,Terminé
+mcm_key_not_bound,Non assignée
+mcm_press_any_key,Appuyez sur une touche...
+mcm_section_ui,Interface
+mcm_opt_show_descriptions,Afficher la description des mods
+mcm_opt_show_descriptions_tip,Afficher une description détaillée du mod dans l'en-tête du panneau
+mcm_opt_auto_save_notice,Alerte de sauvegarde auto
+mcm_opt_auto_save_notice_tip,Afficher une notification lors de l'enregistrement des paramètres
+mcm_section_hotkeys,Accès rapide
+mcm_opt_quick_open_key,Raccourci d'ouverture rapide
+mcm_opt_quick_open_key_tip,Touche facultative pour ouvrir directement les paramètres des mods sans menu Échap. Appuyez sur Retour arrière pour désactiver.
+mcm_bind_dialog_title,Configuration des touches
+mcm_bind_hint,Appuyez sur une touche ou combinaison (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Appuyez sur Suppr pour effacer. Échap pour annuler.
+mcm_bind_btn_clear,Effacer
+mcm_bind_btn_save,Enregistrer
+mcm_bind_btn_cancel,Annuler

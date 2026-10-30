@@ -1,0 +1,11 @@
+"workshopitem"
+{
+	"appid" "4348910"
+	"publishedfileid" "0"
+	"contentfolder" "G:\\SteamLibrary\\steamapps\\common\\Probably Stolen\\Mods\\ProbablyMCM\\Dist"
+	"previewfile" "G:\\SteamLibrary\\steamapps\\common\\Probably Stolen\\Mods\\ProbablyMCM\\Dist\\preview.png"
+	"visibility" "2"
+	"title" "Probably MCM - Mod Configuration Menu"
+	"description" "[h1]Probably MCM - Mod Configuration Menu[/h1]\n\n[b]Probably MCM[/b] is a universal in-game settings hub and developer framework for [i]Probably Stolen[/i].\n\n[h2]🎮 Features for Players[/h2]\n• [b]Unified In-Game Menu:[/b] Accessible directly from the Pause Menu ([b]Esc[/b] ➔ \"MCM Menu\") and the Main Menu (under \"Credits\").\n• [b]Interactive KeyBind Dialog:[/b] Rebind hotkeys by simply pressing any key or combination ([b]Ctrl[/b], [b]Alt[/b], [b]Shift[/b] + Key). Press [b]Delete[/b] to unbind.\n• [b]Two-Column Responsive UI:[/b] Instant mod search, settings counter badge, and clean layout.\n• [b]Zero-Setup Required:[/b] Existing mods with standard configs are automatically detected and displayed.\n• [b]Full Internationalization:[/b] Translated into 9 languages (English, Russian, Chinese Simplified/Traditional, German, Japanese, French, Spanish, Polish).\n\n[h2]🛠️ For Mod Developers[/h2]\n• [b]Zero-Dependency Integration:[/b] Standard [i]ModConfig[/i] entries automatically map to toggles, sliders, number inputs, and hotkey dialogues.\n• [b]Fluent API:[/b] Reference [i]ProbablyMCM.dll[/i] for section grouping, dropdowns, action buttons, info popovers, and dynamic localization.\n• Full developer documentation included in [b]Documentation.md[/b] (English & 中文).\n\n[b]Author:[/b] Raul Moreau\n[b]Version:[/b] 1.0.0"
+	"changenote" "Initial release v1.0.0"
+}

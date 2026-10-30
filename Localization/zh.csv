@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (Simplified Chinese)
+mcm_esc_button,MCM 菜单
+mcm_window_title,模组配置菜单
+mcm_search_placeholder,🔍 搜索模组或设置...
+mcm_mod_count,模组总数: {0}
+mcm_author,作者: {0}
+mcm_select_mod_hint,从左侧列表中选择一个模组以配置设置。
+mcm_no_settings,此模组没有可配置的设置。
+mcm_default_section,常规
+mcm_btn_reset,↺ 重置设置
+mcm_btn_done,完成
+mcm_key_not_bound,未绑定
+mcm_press_any_key,按任意键...
+mcm_section_ui,界面
+mcm_opt_show_descriptions,显示模组描述
+mcm_opt_show_descriptions_tip,在设置面板顶部显示模组详细描述
+mcm_opt_auto_save_notice,自动保存提示
+mcm_opt_auto_save_notice_tip,保存设置时显示提示消息
+mcm_section_hotkeys,快捷访问
+mcm_opt_quick_open_key,额外快捷键
+mcm_opt_quick_open_key_tip,无需打开 Esc 菜单即可打开模组设置的快捷键。按 Backspace 可禁用。
+mcm_bind_dialog_title,快捷键设置
+mcm_bind_hint,按下按键或组合键 (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,按 Delete 清除。按 Esc 取消。
+mcm_bind_btn_clear,清除
+mcm_bind_btn_save,保存
+mcm_bind_btn_cancel,取消

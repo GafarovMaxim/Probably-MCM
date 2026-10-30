@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (Russian)
+mcm_esc_button,MCM-меню
+mcm_window_title,Настройки модов
+mcm_search_placeholder,🔍 Поиск мода или параметра...
+mcm_mod_count,Всего модов: {0}
+mcm_author,Автор: {0}
+mcm_select_mod_hint,Выберите мод из списка слева для настройки параметров.
+mcm_no_settings,Этот мод не содержит настраиваемых параметров.
+mcm_default_section,Общие
+mcm_btn_reset,↺ Сбросить настройки
+mcm_btn_done,Готово
+mcm_key_not_bound,Не назначена
+mcm_press_any_key,Нажмите любую клавишу...
+mcm_section_ui,Интерфейс
+mcm_opt_show_descriptions,Показывать описание модов
+mcm_opt_show_descriptions_tip,Отображать подробное описание мода в шапке панели настроек
+mcm_opt_auto_save_notice,Уведомлять об автосохранении
+mcm_opt_auto_save_notice_tip,Показывать всплывающее сообщение при сохранении настроек
+mcm_section_hotkeys,Быстрый доступ
+mcm_opt_quick_open_key,Дополнительная клавиша открытия
+mcm_opt_quick_open_key_tip,Необязательная горячая клавиша для открытия меню настроек модов без меню Esc. Нажмите Backspace для отключения.
+mcm_bind_dialog_title,Настройка горячей клавиши
+mcm_bind_hint,Нажмите клавишу или комбинацию (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Для очистки нажмите Delete. Для отмены нажмите Esc.
+mcm_bind_btn_clear,Очистить
+mcm_bind_btn_save,Сохранить
+mcm_bind_btn_cancel,Отмена

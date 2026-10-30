@@ -1,0 +1,27 @@
+# Localization for ProbablyMCM (Japanese)
+mcm_esc_button,MCMメニュー
+mcm_window_title,Mod設定メニュー
+mcm_search_placeholder,🔍 Modまたは設定を検索...
+mcm_mod_count,合計Mod数: {0}
+mcm_author,作者: {0}
+mcm_select_mod_hint,左のリストからModを選択して設定を変更します。
+mcm_no_settings,このModには設定可能な項目がありません。
+mcm_default_section,一般
+mcm_btn_reset,↺ デフォルトに戻す
+mcm_btn_done,完了
+mcm_key_not_bound,未割り当て
+mcm_press_any_key,任意のキーを押してください...
+mcm_section_ui,インターフェース
+mcm_opt_show_descriptions,Modの説明を表示
+mcm_opt_show_descriptions_tip,設定パネル上部にModの詳細説明を表示します
+mcm_opt_auto_save_notice,自動保存の通知
+mcm_opt_auto_save_notice_tip,設定保存時にポップアップ通知を表示します
+mcm_section_hotkeys,クイックアクセス
+mcm_opt_quick_open_key,クイックオープンキー
+mcm_opt_quick_open_key_tip,Escメニューを開かずに直接Mod設定を開くキー。Backspaceで無効化。
+mcm_bind_dialog_title,キー設定
+mcm_bind_hint,キーまたは組み合わせを押してください (Ctrl, Alt, Shift)...
+mcm_bind_delete_hint,Deleteキーでクリア。Escキーでキャンセル。
+mcm_bind_btn_clear,クリア
+mcm_bind_btn_save,保存
+mcm_bind_btn_cancel,キャンセル

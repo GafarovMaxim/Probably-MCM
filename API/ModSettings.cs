@@ -59,6 +59,7 @@ namespace ProbablyMCM.API
         {
             var entry = CreateEntry(key, labelGetter, typeof(float), defaultValue, section, tooltipGetter);
             entry.EntryType = McmEntryType.Slider;
+            entry.HasRange = true;
             entry.Min = min;
             entry.Max = max;
             entry.Step = step;
@@ -80,6 +81,7 @@ namespace ProbablyMCM.API
         {
             var entry = CreateEntry(key, labelGetter, typeof(int), defaultValue, section, tooltipGetter);
             entry.EntryType = McmEntryType.IntNumber;
+            entry.HasRange = true;
             entry.Min = min;
             entry.Max = max;
             entry.WholeNumbers = true;
@@ -100,6 +102,7 @@ namespace ProbablyMCM.API
         {
             var entry = CreateEntry(key, labelGetter, typeof(float), defaultValue, section, tooltipGetter);
             entry.EntryType = McmEntryType.FloatNumber;
+            entry.HasRange = true;
             entry.Min = min;
             entry.Max = max;
             if (onChanged != null)

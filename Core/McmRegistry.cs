@@ -83,6 +83,7 @@ namespace ProbablyMCM.Core
                 if (vanillaConfig != null && vanillaConfig.HasEntries)
                 {
                     McmModData data = GetOrCreate(modId, mod.Manifest.Name);
+                    data.NativeConfig = vanillaConfig;
                     FillModMetadata(data);
 
                     foreach (ConfigEntry vEntry in vanillaConfig.Entries)
@@ -98,6 +99,8 @@ namespace ProbablyMCM.Core
                             ValueType = vEntry.ValueType,
                             DefaultValue = vEntry.BoxedDefault,
                             Value = vEntry.BoxedValue,
+                            NativeEntry = vEntry,
+                            HasRange = vEntry.HasRange,
                             RequiresRestart = vEntry.RequiresRestart
                         };
 
@@ -139,14 +142,17 @@ namespace ProbablyMCM.Core
                         {
                             try
                             {
-                                AccessTools.Method(vEntry.GetType(), "ApplyBoxed")?.Invoke(vEntry, new[] { newVal });
-                                vanillaConfig.Save();
-                                McmModData.NotifyModConfigApplied(modId);
+                                object typed = vEntry.ValueType.IsEnum && newVal is string choice
+                                    ? Enum.Parse(vEntry.ValueType, choice, true) : newVal;
+                                var apply = AccessTools.Method(vEntry.GetType(), "ApplyBoxed");
+                                if (apply == null) throw new MissingMethodException(vEntry.GetType().FullName, "ApplyBoxed");
+                                apply.Invoke(vEntry, new[] { typed });
                             }
                             catch (Exception ex)
                             {
                                 Debug.LogError($"[ProbablyMCM] Error applying value to vanilla ConfigEntry: {ex}");
                             }
+                            finally { entry.SetValue(vEntry.BoxedValue, notify: false); }
                         };
 
                         data.AddEntry(entry);

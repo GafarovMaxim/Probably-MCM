@@ -1,5 +1,15 @@
 # ProbablyMCM - Mod Configuration Menu for Probably Stolen
 
+## Persistence fix 1.0.1
+
+- Native game settings are saved by the game's ModConfig; MCM no longer overwrites them with its own Unity JSON serialization.
+- MCM API values load when their entries register. Late and unknown keys survive saves, including mixed native/MCM-only settings.
+- Empty strings, enums, double values, and numeric ranges restore correctly. Native enum choices are applied as their actual enum type.
+- MCM-owned JSON uses the game's existing Newtonsoft.Json library, atomic replacement and bounded backup files. Malformed existing JSON is preserved and reported rather than overwritten.
+- Existing files already reduced to `{}` contain no previous values; configure those settings again after installing the fix.
+
+Offline restart regressions: 141 assertions passed in two separate processes. The game's mod scanner accepts this build with the existing `files` and `reflection-external` capabilities. Live game restart verification remains separate from these automated checks.
+
 ![ProbablyMCM Banner](preview.png)
 
 A unified in-game settings hub and developer configuration framework for all mods in **Probably Stolen**.
@@ -101,7 +111,7 @@ Mods/ProbablyMCM/
 ```
 
 Configurations are stored in the game's standard path:
-`%AppData%/../LocalLow/Salty Panda Studios/Probably Stolen/ModConfigs/<ModId>.json`
+`%AppData%/../LocalLow/Questing Goose Studio/Probably Stolen/ModConfigs/<ModId>.json`
 
 ---
 

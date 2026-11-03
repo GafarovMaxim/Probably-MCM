@@ -3,7 +3,7 @@
   <ID>probably_mcm</ID>
   <Name>Probably MCM - Mod Configuration Menu</Name>
   <Author>Raul Moreau</Author>
-  <ModVersion>1.0.0</ModVersion>
+  <ModVersion>1.0.1</ModVersion>
   <Description>Universal in-game Mod Configuration Menu (MCM) for Probably Stolen. Features pause menu &amp; main menu integration, 2-column view, interactive keybind dialog, live settings and developer API. / Универсальное меню настроек модов для игры Probably Stolen.</Description>
   <GameVersions>
     <Version>0.46D</Version>

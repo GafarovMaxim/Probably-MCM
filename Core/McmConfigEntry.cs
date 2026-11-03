@@ -29,11 +29,13 @@ namespace ProbablyMCM.Core
 
         public object DefaultValue { get; set; }
         public object Value { get; set; }
+        internal ConfigEntry NativeEntry { get; set; }
 
         // Slider & Number ranges
         public float Min { get; set; }
         public float Max { get; set; } = 1f;
         public float Step { get; set; } = 0.1f;
+        public bool HasRange { get; set; }
         public bool WholeNumbers { get; set; }
         public Func<float, string> ValueFormatter { get; set; }
 
@@ -124,7 +126,7 @@ namespace ProbablyMCM.Core
 
         public void DeserializeValue(string raw)
         {
-            if (string.IsNullOrEmpty(raw)) return;
+            if (raw == null) return;
 
             try
             {
@@ -136,7 +138,8 @@ namespace ProbablyMCM.Core
                 {
                     if (int.TryParse(raw, NumberStyles.Integer, CultureInfo.InvariantCulture, out var i))
                     {
-                        if (Min < Max) i = Mathf.Clamp(i, (int)Min, (int)Max);
+                        if ((HasRange || EntryType == McmEntryType.Slider) && Min < Max)
+                            i = Mathf.Clamp(i, (int)Min, (int)Max);
                         Value = i;
                     }
                 }
@@ -144,13 +147,23 @@ namespace ProbablyMCM.Core
                 {
                     if (float.TryParse(raw, NumberStyles.Float, CultureInfo.InvariantCulture, out var f))
                     {
-                        if (Min < Max) f = Mathf.Clamp(f, Min, Max);
+                        if ((HasRange || EntryType == McmEntryType.Slider) && Min < Max)
+                            f = Mathf.Clamp(f, Min, Max);
                         Value = f;
                     }
                 }
-                else if (ValueType == typeof(KeyCode))
+                else if (ValueType == typeof(double))
                 {
-                    if (Enum.TryParse<KeyCode>(raw, true, out var kc)) Value = kc;
+                    if (double.TryParse(raw, NumberStyles.Float, CultureInfo.InvariantCulture, out var d))
+                    {
+                        if ((HasRange || EntryType == McmEntryType.Slider) && Min < Max)
+                            d = Math.Max(Min, Math.Min(Max, d));
+                        Value = d;
+                    }
+                }
+                else if (ValueType != null && ValueType.IsEnum)
+                {
+                    Value = Enum.Parse(ValueType, raw, true);
                 }
                 else
                 {
